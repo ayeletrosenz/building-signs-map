@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="ארכיון צילומי של שלטי רחוב ומספרי בתים.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>596 מטר מהבית</title>
+  <link rel="preload" href="TheBasics-Medium.f09ac54aeaa52c1d39feebf6e99e784c.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='7' width='26' height='18' fill='%2327478d'/%3E%3Cpath d='M8 13h16M8 19h10' stroke='%23f2b0be' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="styles.css?v=editor-exit-layout-2">
+  <script defer src="vendor/leaflet.js"></script>
+  <script defer src="map-display.js?v=size-label-1"></script>
+  <script defer src="editor.js?v=editor-exit-layout-2"></script>
+  <script defer src="app.js?v=public-export-1"></script>
+</head>
+<body>
+  <svg class="filter-definitions" width="0" height="0" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="sign-outline" x="-15%" y="-15%" width="130%" height="130%" color-interpolation-filters="sRGB">
+        <feMorphology in="SourceAlpha" operator="dilate" radius="1.3" result="expanded"/>
+        <feComposite in="expanded" in2="SourceAlpha" operator="out" result="edge"/>
+        <feFlood flood-color="#ffedf2" result="outline-color"/>
+        <feComposite in="outline-color" in2="edge" operator="in" result="outline"/>
+        <feMerge><feMergeNode in="outline"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+  </svg>
+  <main id="map" aria-label="מפת ארכיון הצילומים" dir="ltr"></main>
+  <button id="menu-toggle" aria-expanded="false" aria-controls="menu-drawer">תפריט</button>
+  <aside id="menu-drawer" aria-label="תפריט המפה" inert>
+    <button id="close-menu" class="icon-button" aria-label="סגירת התפריט">×</button>
+    <div class="menu-scroll">
+    <section class="view-controls" aria-label="תצוגת המפה">
+      <div class="map-controls">
+        <label id="zoom-title" for="map-zoom">קנה מידה</label>
+        <input id="map-zoom" class="menu-slider" type="range" min="0" max="19" step="1" value="15" dir="ltr">
+        <div class="slider-endpoints" aria-hidden="true"><span>רחוק</span><span>קרוב</span></div>
+      </div>
+    <div class="thumbnail-controls" aria-label="גודל השלטים">
+      <div class="panel-heading"><label for="thumbnail-size">גודל השלטים</label></div>
+      <input id="thumbnail-size" class="menu-slider" type="range" min="60" max="160" step="5" value="100" dir="ltr" aria-label="גודל השלטים">
+      <div class="slider-endpoints" aria-hidden="true"><span>קטן</span><span>גדול</span></div>
+    </div>
+    </section>
+    <section id="filters-panel" aria-labelledby="filters-title">
+      <div class="panel-heading"><h2 id="filters-title">סינון</h2></div>
+      <div id="filters" class="filter-options tag-filter-chips" role="group" aria-label="סינון לפי תגית אחת"><button id="clear-filters" class="filter-option" aria-pressed="true">הכול</button></div>
+      <p id="filters-empty" class="muted">עדיין לא נוספו תגיות</p>
+    </section>
+    </div>
+    <button id="editor-button" class="editor-entry" hidden>עריכת הארכיון</button>
+  </aside>
+  <p id="status" class="status" role="status" aria-live="polite" hidden></p>
+  <dialog id="lightbox" aria-label="תמונה מוגדלת">
+    <button id="close-lightbox" aria-label="סגירת התמונה" title="סגירה (Esc)">×</button>
+    <button id="previous-image" class="image-navigation previous" aria-label="התמונה הקודמת" hidden>›</button>
+    <img id="full-image" alt="">
+    <button id="next-image" class="image-navigation next" aria-label="התמונה הבאה" hidden>‹</button>
+    <p id="image-error" role="alert" hidden>לא ניתן לטעון את התמונה.</p>
+    <div id="image-info" aria-label="מידע על השלט">
+      <div id="image-tags" aria-label="תגיות"></div>
+      <button id="edit-viewer-photo" hidden>עריכה</button>
+    </div>
+  </dialog>
+  <section id="archive-editor" aria-labelledby="editor-title" hidden>
+    <header class="editor-header">
+      <h1 id="editor-title">עריכת הארכיון</h1>
+      <button id="back-gallery" hidden>חזרה לתמונות</button>
+      <span id="save-state" role="status" aria-live="polite">כל השינויים נשמרו</span>
+      <button id="save-editor" class="solid-button" disabled>שמירה</button>
+      <button id="close-editor" class="icon-button" aria-label="סגירת העורך">×</button>
+    </header>
+    <div id="editor-message" role="status" hidden></div>
+    <div class="editor-recovery"><button id="reload-editor" hidden>טעינת הקבצים מחדש</button><button id="download-draft" hidden>הורדת הטיוטה הקודמת</button></div>
+    <div class="editor-main">
+      <section class="editor-gallery" aria-label="בחירת תמונות">
+        <div class="selection-bar"><span id="selected-count">לא נבחרו תמונות</span><button id="select-all">בחירת הכול</button><button id="select-none">ביטול הבחירה</button></div>
+        <div id="photo-grid"></div>
+      </section>
+      <aside class="editor-inspector">
+        <section id="tag-editor" aria-labelledby="tag-editor-title">
+          <h2 id="tag-editor-title">תגיות</h2>
+          <p class="muted">בחרו שלטים בגלריה, הקלידו תגית ובחרו הצעה או צרו תגית חדשה.</p>
+          <label for="tag-input">הוספת תגית</label>
+          <div id="tag-composer">
+            <input id="tag-input" type="text" maxlength="100" placeholder="הקלידו תגית…" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="tag-suggestions" autocomplete="off">
+            <div id="tag-suggestions" role="listbox" aria-label="הצעות לתגיות" hidden></div>
+          </div>
+          <p id="tag-status" role="status" aria-live="polite"></p>
+          <div id="selection-tags-section" hidden>
+            <h3>תגיות בשלטים שנבחרו</h3>
+            <div id="selection-tags" class="tag-chip-list"></div>
+          </div>
+          <h3>כל התגיות</h3>
+          <p class="muted">לחצו על תגית לבחירת כל השלטים שסומנו בה.</p>
+          <div id="tag-library" class="tag-chip-list"></div>
+          <p id="tag-library-empty" class="muted">התגיות שתיצרו יופיעו כאן.</p>
+        </section>
+        <section id="location-editor" hidden aria-labelledby="location-title">
+          <h2 id="location-title">כתובת ומיקום</h2>
+          <img id="location-photo" alt="התמונה שנבחרה לתיקון מיקום">
+          <p id="location-filename" dir="ltr"></p>
+          <label for="edit-address">כתובת מלאה, כולל מספר בית ועיר</label><input id="edit-address" maxlength="300" placeholder="רחוב, מספר בית, עיר">
+          <button id="search-address">חיפוש כתובת</button>
+          <p class="muted geocoding-note">החיפוש שולח את הכתובת בלבד ל־OpenStreetMap. <a href="https://operations.osmfoundation.org/policies/nominatim/" target="_blank" rel="noopener">מגבלות השירות</a>: חיפוש בלחיצה בלבד, ללא השלמה אוטומטית, ותוצאות נשמרות לשימוש חוזר.</p>
+          <p id="address-state" role="status" aria-live="polite"></p>
+          <div id="address-results"></div>
+          <button id="choose-map-point">בחירת מיקום במפה</button>
+          <div class="coordinate-fields"><label>קו רוחב<input id="edit-latitude" type="number" min="-90" max="90" step="any" dir="ltr"></label><label>קו אורך<input id="edit-longitude" type="number" min="-180" max="180" step="any" dir="ltr"></label></div>
+          <p class="muted">אפשר לגרור את הסמן או ללחוץ במפה. הכתובת והמיקום ייכנסו לטיוטה רק לאחר אישור.</p>
+          <div class="tag-actions"><button id="confirm-location">אישור המיקום</button><button id="cancel-location">ביטול התיקון</button></div>
+        </section>
+      </aside>
+    </div>
+  </section>
+  <dialog id="close-editor-dialog" aria-labelledby="close-editor-title" aria-describedby="close-editor-description">
+    <button id="cancel-close-editor" class="icon-button" aria-label="חזרה לעריכה" autofocus>×</button>
+    <h2 id="close-editor-title">יש שינויים שלא נשמרו</h2>
+    <p id="close-editor-description">לשמור את השינויים לפני סגירת העורך?</p>
+    <div class="close-editor-actions">
+      <button id="keep-editing">חזרה לעריכה</button>
+      <div class="close-editor-decisions">
+        <button id="discard-editor-changes">ביטול השינויים</button>
+        <button id="save-and-close-editor">שמירה</button>
+      </div>
+    </div>
+    <p id="close-editor-error" role="status" aria-live="polite"></p>
+  </dialog>
+  <noscript><p class="status">יש להפעיל JavaScript כדי לצפות במפה.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "originals": "signs_images",
+  "crops": "cropped_images",
+  "defaultCenter": [
+    31.778,
+    35.22
+  ],
+  "defaultZoom": 15,
+  "basemap": "diagram",
+  "streetData": "data/streets.geojson?v=expanded-neighborhood-1",
+  "streetLabels": "data/street-labels.geojson?v=expanded-neighborhood-1",
+  "areaPadding": 0.65,
+  "panPadding": 0.9,
+  "streetCoveragePadding": 3.5,
+  "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "tileAttribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+  "maxZoom": 19,
+  "geocoding": {
+    "endpoint": "https://nominatim.openstreetmap.org/search"
+  },
+  "categoryValues": {
+    "tags": [
+      "0 מטר מהבית",
+      "גם באנגלית",
+      "גרשיים תועים",
+      "דוד המלך",
+      "התעללות בפונטים",
+      "ישן חדש",
+      "מה זה פה",
+      "מחוץ לקופסא"
+    ]
+  },
+  "categories": {
+    "tags": "תגיות"
+  }
+}
