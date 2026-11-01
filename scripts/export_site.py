@@ -117,6 +117,8 @@ def export_site():
         viewing.mkdir(parents=True)
         exported = []
         for photo in photos:
+            if photo.get("hidden"):
+                continue
             source = source_path(photo["image"])
             stem = hashlib.sha256(photo["id"].encode()).hexdigest()[:20]
             with Image.open(source) as original:

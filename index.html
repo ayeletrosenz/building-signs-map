@@ -9,11 +9,11 @@
   <link rel="preload" href="TheBasics-Medium.f09ac54aeaa52c1d39feebf6e99e784c.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='7' width='26' height='18' fill='%2327478d'/%3E%3Cpath d='M8 13h16M8 19h10' stroke='%23f2b0be' stroke-width='2'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="vendor/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=editor-exit-layout-2">
+  <link rel="stylesheet" href="styles.css?v=slider-fill-2">
   <script defer src="vendor/leaflet.js"></script>
   <script defer src="map-display.js?v=size-label-1"></script>
-  <script defer src="editor.js?v=editor-exit-layout-2"></script>
-  <script defer src="app.js?v=public-export-1"></script>
+  <script defer src="editor.js?v=hidden-signs-1"></script>
+  <script defer src="app.js?v=slider-fill-1"></script>
 </head>
 <body>
   <svg class="filter-definitions" width="0" height="0" aria-hidden="true" focusable="false">
@@ -34,14 +34,12 @@
     <div class="menu-scroll">
     <section class="view-controls" aria-label="תצוגת המפה">
       <div class="map-controls">
-        <label id="zoom-title" for="map-zoom">קנה מידה</label>
-        <input id="map-zoom" class="menu-slider" type="range" min="0" max="19" step="1" value="15" dir="ltr">
-        <div class="slider-endpoints" aria-hidden="true"><span>רחוק</span><span>קרוב</span></div>
+        <div class="panel-heading"><label id="zoom-title" for="map-zoom">קנה מידה</label><output id="zoom-scale" class="slider-percent" for="map-zoom" dir="ltr" title="קנה מידה משוער לפי גודל פיקסל תקני בדפדפן">—</output></div>
+        <input id="map-zoom" class="menu-slider" type="range" min="0" max="19" step="1" value="15" dir="ltr" disabled>
       </div>
     <div class="thumbnail-controls" aria-label="גודל השלטים">
-      <div class="panel-heading"><label for="thumbnail-size">גודל השלטים</label></div>
+      <div class="panel-heading"><label for="thumbnail-size">גודל השלטים</label><output id="thumbnail-percent" class="slider-percent" for="thumbnail-size" dir="ltr">100%</output></div>
       <input id="thumbnail-size" class="menu-slider" type="range" min="60" max="160" step="5" value="100" dir="ltr" aria-label="גודל השלטים">
-      <div class="slider-endpoints" aria-hidden="true"><span>קטן</span><span>גדול</span></div>
     </div>
     </section>
     <section id="filters-panel" aria-labelledby="filters-title">
@@ -76,7 +74,7 @@
     <div class="editor-recovery"><button id="reload-editor" hidden>טעינת הקבצים מחדש</button><button id="download-draft" hidden>הורדת הטיוטה הקודמת</button></div>
     <div class="editor-main">
       <section class="editor-gallery" aria-label="בחירת תמונות">
-        <div class="selection-bar"><span id="selected-count">לא נבחרו תמונות</span><button id="select-all">בחירת הכול</button><button id="select-none">ביטול הבחירה</button></div>
+        <div class="selection-bar"><span id="selected-count">לא נבחרו תמונות</span><button id="select-all">בחירת הכול</button><button id="select-none">ביטול הבחירה</button><button id="hide-selected" disabled>הסתרת הנבחרים</button><button id="show-selected" disabled>הצגת הנבחרים</button></div>
         <div id="photo-grid"></div>
       </section>
       <aside class="editor-inspector">

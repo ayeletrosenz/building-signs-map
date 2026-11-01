@@ -79,6 +79,19 @@ class ExportTests(unittest.TestCase):
         for path, data in before.items():
             self.assertEqual(path.read_bytes(), data, path)
 
+    def test_hidden_signs_and_their_assets_are_excluded(self):
+        Image.new("RGB", (80, 80), "blue").save(self.root / "originals/hidden.jpg")
+        annotations_path = self.root / "data/annotations.json"
+        annotations = json.loads(annotations_path.read_text())
+        annotations["hidden.jpg"] = {"hidden": True, "tags": {"tags": ["Private tag"]}}
+        annotations_path.write_text(json.dumps(annotations))
+        self.build()
+        photos = json.loads((self.root / "dist/data/photos.json").read_text())
+        self.assertEqual([p["id"] for p in photos], ["one.jpg"])
+        self.assertEqual(len(list((self.root / "dist/assets/photos").iterdir())), 1)
+        hidden = next(p for p in export_site.prepare.prepare(save=False)[0] if p["id"] == "hidden.jpg")
+        self.assertFalse((self.root / "dist" / hidden["thumbnail"].split("?")[0]).exists())
+
     def test_failed_export_keeps_previous_package(self):
         self.build()
         before = (self.root / "signs-publish.zip").read_bytes()

@@ -84,6 +84,10 @@ def save_editor(payload):
             if filename not in known or not isinstance(entry, dict):
                 raise EditorError("התמונה אינה קיימת בארכיון.")
             previous = annotations.setdefault(filename, {"coordinates": None, "tags": {}})
+            if "hidden" in entry:
+                if not isinstance(entry["hidden"], bool):
+                    raise EditorError("מצב ההסתרה אינו תקין.")
+                previous["hidden"] = entry["hidden"]
             if "coordinates" in entry:
                 value = entry["coordinates"]
                 if value is not None and not prepare.valid_coordinates(value):

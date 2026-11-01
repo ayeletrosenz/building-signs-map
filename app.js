@@ -37,7 +37,7 @@ function flatTags(value) {
   return [...unique.values()];
 }
 function matches(photo) {
-  return activeTag===null||flatTags(photo.tags).some(tag=>tagKey(tag)===activeTag);
+  return !photo.hidden&&(activeTag===null||flatTags(photo.tags).some(tag=>tagKey(tag)===activeTag));
 }
 function photoIcon(photo, size) {
   // Retain the numeric argument used by older cached layout scripts.
@@ -62,7 +62,7 @@ function renderMarkers() {
   status(!located.length ? (visible.length ? "לשלטים האלה עדיין לא הוגדר מיקום." : "אין שלטים שתואמים לסינון.") : "");
 }
 function updateMapLimits() {
-  const points = photos.map(coordinates).filter(validCoordinates);
+  const points = photos.filter(photo=>!photo.hidden).map(coordinates).filter(validCoordinates);
   const bounds = points.length ? L.latLngBounds(points) : L.latLngBounds([
     [config.defaultCenter[0]-.004,config.defaultCenter[1]-.004],
     [config.defaultCenter[0]+.004,config.defaultCenter[1]+.004]
@@ -123,7 +123,7 @@ function fitPhotos() {
 }
 function buildFilters() {
   const reset=$("clear-filters");$("filters").replaceChildren(reset);
-  const tags=flatTags(photos.flatMap(photo=>flatTags(photo.tags))).sort((a,b)=>a.localeCompare(b,"he"));
+  const tags=flatTags(photos.filter(photo=>!photo.hidden).flatMap(photo=>flatTags(photo.tags))).sort((a,b)=>a.localeCompare(b,"he"));
   for(const tag of tags) {
     const key=tagKey(tag),button=document.createElement("button");button.className="filter-option";
     button.textContent=tag;button.dataset.tag=key;button.setAttribute("aria-pressed",String(activeTag===key));
@@ -183,6 +183,12 @@ $("menu-toggle").addEventListener("click",()=>{
   $("menu-drawer").inert=false; $("menu-drawer").classList.add("is-open"); $("menu-toggle").setAttribute("aria-expanded","true");
 });
 $("close-menu").addEventListener("click",closeMenu);
+function updateSliderFill(id) {
+  const slider=$(id);
+  const range=Number(slider.max)-Number(slider.min);
+  const percent=range>0?Math.max(0,Math.min(100,(Number(slider.value)-Number(slider.min))/range*100)):100;
+  slider.style.setProperty("--slider-fill",`${percent}%`);
+}
 $("map-zoom").addEventListener("input",()=>{
   if(map)map.setZoom(Number($("map-zoom").value),{animate:false});
 });
@@ -190,7 +196,9 @@ $("clear-filters").addEventListener("click",()=>{activeTag=null;updateFilterSele
 function updateThumbnailControl() {
   const percent=Math.round(thumbnailScale*100);
   $("thumbnail-size").value=String(percent);
+  $("thumbnail-percent").textContent=`${percent}%`;
   $("thumbnail-size").setAttribute("aria-valuetext",`${percent} אחוז`);
+  updateSliderFill("thumbnail-size");
 }
 updateThumbnailControl();
 $("thumbnail-size").addEventListener("input",()=>{
@@ -221,9 +229,15 @@ async function start() {
       const control=$("map-zoom"),minimum=map.getMinZoom(),maximum=map.getMaxZoom();
       control.min=String(minimum);control.max=String(maximum);control.value=String(Math.round(map.getZoom()));
       control.disabled=minimum===maximum;
-      control.setAttribute("aria-valuetext",`רמת קירוב ${Math.round(map.getZoom())-minimum+1} מתוך ${maximum-minimum+1}`);
+      updateSliderFill("map-zoom");
+      const center=map.getSize().divideBy(2);
+      const metersPerPixel=map.distance(map.containerPointToLatLng(center.subtract([50,0])),map.containerPointToLatLng(center.add([50,0])))/100;
+      // CSS uses 96 pixels per inch; physical screen dimensions can vary.
+      const denominator=Number((metersPerPixel/(.0254/96)).toPrecision(2));
+      $("zoom-scale").textContent=`1:${denominator.toLocaleString("en-US")}`;
+      control.setAttribute("aria-valuetext",`קנה מידה משוער 1 ל־${denominator.toLocaleString("he-IL")}`);
     };
-    map.on("zoom zoomend zoomlevelschange",updateZoom);map.on("moveend resize",scheduleMapLayout);
+    map.on("zoom zoomend zoomlevelschange moveend resize",updateZoom);map.on("moveend resize",scheduleMapLayout);
     map.on("zoomend",updateMapPanLimits);
     buildFilters();renderMarkers();fitPhotos();updateZoom();document.fonts.ready.then(scheduleMapLayout);
     map.on("resize",()=>{const overview=map.getZoom()<=map.getMinZoom();updateMapLimits();if(overview)fitPhotos();});

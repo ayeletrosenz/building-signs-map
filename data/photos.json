@@ -23,7 +23,8 @@
       "tags": [
         "מחוץ לקופסא"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164040108.jpg",
@@ -49,7 +50,8 @@
       "tags": [
         "0 מטר מהבית"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164114181.jpg",
@@ -75,7 +77,8 @@
       "tags": [
         "גם באנגלית"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164135816.jpg",
@@ -102,7 +105,8 @@
         "התעללות בפונטים",
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164241068.jpg",
@@ -124,7 +128,8 @@
     "address": "רמב\"ן 19 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164541793.jpg",
@@ -148,7 +153,8 @@
     "height": 3064,
     "tags": {
       "tags": []
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164551255.jpg",
@@ -174,7 +180,8 @@
       "tags": [
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164619089.jpg",
@@ -196,7 +203,8 @@
     "address": "בן מיימון 32 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164705762.jpg",
@@ -218,7 +226,8 @@
     "address": "בן מיימון 17 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164717889.jpg",
@@ -242,7 +251,8 @@
     "height": 3064,
     "tags": {
       "tags": []
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164739443.jpg",
@@ -264,7 +274,8 @@
     "address": "בן מיימון 19 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164823566.jpg",
@@ -290,7 +301,8 @@
       "tags": [
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164848381.jpg",
@@ -317,7 +329,8 @@
         "מה זה פה",
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164939031.jpg",
@@ -339,7 +352,8 @@
     "address": "אלפסי 6 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261021_164954641.jpg",
@@ -365,7 +379,8 @@
       "tags": [
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_165054715.jpg",
@@ -391,7 +406,8 @@
       "tags": [
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_165117175.jpg",
@@ -413,7 +429,8 @@
     "address": "אלפסי 19 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261021_165236153.jpg",
@@ -435,7 +452,8 @@
     "address": "אפודי 3 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261021_165346878.jpg",
@@ -457,7 +475,8 @@
     "address": "מטודלה 9 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261021_165437846.jpg",
@@ -479,7 +498,8 @@
     "address": "מטודלה 15 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261021_165517282.jpg",
@@ -501,7 +521,8 @@
     "address": "מטודלה 19 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261021_201545892.jpg",
@@ -527,7 +548,8 @@
       "tags": [
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_201632518.jpg",
@@ -555,7 +577,8 @@
         "ישן חדש",
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_201650652.MP.jpg",
@@ -582,7 +605,8 @@
         "ישן חדש",
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261021_201916363.jpg",
@@ -610,7 +634,8 @@
         "גרשיים תועים",
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_151932995.jpg",
@@ -637,7 +662,8 @@
         "התעללות בפונטים",
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_151955485.jpg",
@@ -659,7 +685,8 @@
     "address": "רמב\"ן 59 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152047756.jpg",
@@ -685,7 +712,8 @@
       "tags": [
         "ישן חדש"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152220986.jpg",
@@ -707,7 +735,8 @@
     "address": "רמב\"ן 53 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152233678.jpg",
@@ -733,7 +762,8 @@
       "tags": [
         "גרשיים תועים"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152305341.jpg",
@@ -755,7 +785,8 @@
     "address": "רמב\"ן 49 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152336493.MP.jpg",
@@ -777,7 +808,8 @@
     "address": "רמב\"ן 47 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152354678.jpg",
@@ -799,7 +831,8 @@
     "address": "רמב\"ן 45 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152448197.jpg",
@@ -821,7 +854,8 @@
     "address": "רמב\"ן 43 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152514398.jpg",
@@ -843,7 +877,8 @@
     "address": "רמב\"ן 41 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152548629.jpg",
@@ -871,7 +906,8 @@
         "דוד המלך",
         "מחוץ לקופסא"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152705323.jpg",
@@ -900,7 +936,8 @@
         "מה זה פה",
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152730070.jpg",
@@ -926,7 +963,8 @@
       "tags": [
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152905529.jpg",
@@ -952,7 +990,8 @@
       "tags": [
         "ישן חדש"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152923912.jpg",
@@ -978,7 +1017,8 @@
       "tags": [
         "ישן חדש"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_152950087.jpg",
@@ -1005,7 +1045,8 @@
         "ישן חדש",
         "גרשיים תועים"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_153006054.jpg",
@@ -1032,7 +1073,8 @@
         "ישן חדש",
         "גם באנגלית"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_153108021.jpg",
@@ -1059,7 +1101,8 @@
         "גרשיים תועים",
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_153321600.jpg",
@@ -1081,7 +1124,8 @@
     "address": "רמב\"ן 5 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261022_153416129.jpg",
@@ -1108,7 +1152,8 @@
         "ישן חדש",
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_153429225.jpg",
@@ -1136,7 +1181,8 @@
         "ישן חדש",
         "גם באנגלית"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_165352031.jpg",
@@ -1162,7 +1208,8 @@
       "tags": [
         "התעללות בפונטים"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_165413382.jpg",
@@ -1188,7 +1235,8 @@
       "tags": [
         "מה זה פה"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_165633002.jpg",
@@ -1210,7 +1258,8 @@
     "address": "המלך ג'ורג' 54 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261022_165651688.jpg",
@@ -1232,7 +1281,8 @@
     "address": "המלך ג'ורג' 52 ירושלים",
     "width": 4080,
     "height": 3064,
-    "tags": {}
+    "tags": {},
+    "hidden": false
   },
   {
     "id": "PXL_20261022_165741498.MP.jpg",
@@ -1258,7 +1308,8 @@
       "tags": [
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_165910466.jpg",
@@ -1285,7 +1336,8 @@
         "מה זה פה",
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_170035559.MP.jpg",
@@ -1312,7 +1364,8 @@
         "גרשיים תועים",
         "מחוץ לקופסא"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_170343885.jpg",
@@ -1338,7 +1391,8 @@
       "tags": [
         "התעללות בפונטים"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_170434227.jpg",
@@ -1366,7 +1420,8 @@
         "דוד המלך",
         "מחוץ לקופסא"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261022_170436858.jpg",
@@ -1392,7 +1447,8 @@
       "tags": [
         "ישן חדש"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261023_084542148.jpg",
@@ -1418,7 +1474,8 @@
       "tags": [
         "מה זה פה"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_122735169.jpg",
@@ -1444,7 +1501,8 @@
       "tags": [
         "גם באנגלית"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_122804749.jpg",
@@ -1470,7 +1528,8 @@
       "tags": [
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_122847267.jpg",
@@ -1496,7 +1555,8 @@
       "tags": [
         "גם באנגלית"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_122945839.jpg",
@@ -1522,7 +1582,8 @@
       "tags": [
         "ישן חדש"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_123017990.jpg",
@@ -1546,7 +1607,8 @@
     "height": 3064,
     "tags": {
       "tags": []
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_123109072.jpg",
@@ -1570,7 +1632,8 @@
     "height": 3064,
     "tags": {
       "tags": []
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_123121134.jpg",
@@ -1596,7 +1659,8 @@
       "tags": [
         "גם באנגלית"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_123137346.jpg",
@@ -1620,7 +1684,8 @@
     "height": 3064,
     "tags": {
       "tags": []
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_123316755.jpg",
@@ -1646,7 +1711,8 @@
       "tags": [
         "התעללות בפונטים"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_123330543.MP.jpg",
@@ -1670,7 +1736,8 @@
     "height": 3064,
     "tags": {
       "tags": []
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_123405816.jpg",
@@ -1696,7 +1763,8 @@
       "tags": [
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
   },
   {
     "id": "PXL_20261025_123414411.jpg",
@@ -1722,6 +1790,862 @@
       "tags": [
         "דוד המלך"
       ]
-    }
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_114616955.jpg",
+    "filename": "PXL_20261027_114616955.jpg",
+    "image": "signs_images/PXL_20261027_114616955.jpg",
+    "thumbnail": "assets/thumbnails/f9a8d3ae344960f9f428.png?v=0cee0d734a17",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 99,
+    "thumbnailVisibleArea": 15311.255,
+    "coordinates": [
+      31.7748281,
+      35.2159675
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.774775,
+      35.2159611
+    ],
+    "address": "רמב\"ן 14 ירושלים",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "גרשיים תועים"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_114630114.jpg",
+    "filename": "PXL_20261027_114630114.jpg",
+    "image": "signs_images/PXL_20261027_114630114.jpg",
+    "thumbnail": "assets/thumbnails/b6ebb9856af8bb784842.png?v=3e6068129d6d",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 115,
+    "thumbnailVisibleArea": 16681.122,
+    "coordinates": [
+      31.7746081,
+      35.2158731
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.774775,
+      35.2159611
+    ],
+    "address": "רמב\"ן 17 ירושלים",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "גם באנגלית"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_121134966.jpg",
+    "filename": "PXL_20261027_121134966.jpg",
+    "image": "signs_images/PXL_20261027_121134966.jpg",
+    "thumbnail": "assets/thumbnails/91b57372fae4f5f1a9be.jpg?v=b101a237596a",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 144,
+    "thumbnailVisibleArea": 27648,
+    "coordinates": [
+      31.7708889,
+      35.2102111
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7708889,
+      35.2102111
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121201579.jpg",
+    "filename": "PXL_20261027_121201579.jpg",
+    "image": "signs_images/PXL_20261027_121201579.jpg",
+    "thumbnail": "assets/thumbnails/4b673022ca5fd686e05b.jpg?v=447b1360a943",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 144,
+    "thumbnailVisibleArea": 27648,
+    "coordinates": [
+      31.7708889,
+      35.2102111
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7708889,
+      35.2102111
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121213902.jpg",
+    "filename": "PXL_20261027_121213902.jpg",
+    "image": "signs_images/PXL_20261027_121213902.jpg",
+    "thumbnail": "assets/thumbnails/5bbae0478cc5e90abcb2.jpg?v=e694ef4263ea",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 144,
+    "thumbnailVisibleArea": 27648,
+    "coordinates": [
+      31.7708889,
+      35.2102111
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7708889,
+      35.2102111
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121254357.jpg",
+    "filename": "PXL_20261027_121254357.jpg",
+    "image": "signs_images/PXL_20261027_121254357.jpg",
+    "thumbnail": "assets/thumbnails/6b6dcb19b11066a0d10f.png?v=403e9067ee84",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 118,
+    "thumbnailVisibleArea": 20727.992,
+    "coordinates": [
+      31.7716293,
+      35.211324
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7716028,
+      35.2113972
+    ],
+    "address": "מטודלה 24",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121331802.jpg",
+    "filename": "PXL_20261027_121331802.jpg",
+    "image": "signs_images/PXL_20261027_121331802.jpg",
+    "thumbnail": "assets/thumbnails/3ab4348b45052816c6fc.png?v=65322736456a",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 109,
+    "thumbnailVisibleArea": 12770.58,
+    "coordinates": [
+      31.7717191,
+      35.2115397
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7716028,
+      35.2113972
+    ],
+    "address": "מטודלה 22",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121402239.jpg",
+    "filename": "PXL_20261027_121402239.jpg",
+    "image": "signs_images/PXL_20261027_121402239.jpg",
+    "thumbnail": "assets/thumbnails/b8955f5872ba665986f1.png?v=7e8aefe18a7e",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 82,
+    "thumbnailVisibleArea": 13559.294,
+    "coordinates": [
+      31.7716028,
+      35.2113972
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7716028,
+      35.2113972
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121432322.jpg",
+    "filename": "PXL_20261027_121432322.jpg",
+    "image": "signs_images/PXL_20261027_121432322.jpg",
+    "thumbnail": "assets/thumbnails/301c881059abc7e4958d.png?v=cd45d4d115c5",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 97,
+    "thumbnailVisibleArea": 15555.369,
+    "coordinates": [
+      31.7716028,
+      35.2113972
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7716028,
+      35.2113972
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121445301.jpg",
+    "filename": "PXL_20261027_121445301.jpg",
+    "image": "signs_images/PXL_20261027_121445301.jpg",
+    "thumbnail": "assets/thumbnails/4b4321846d41589278f7.png?v=fb87a624918e",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 94,
+    "thumbnailVisibleArea": 15561.388,
+    "coordinates": [
+      31.7716028,
+      35.2113972
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7716028,
+      35.2113972
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121506063.jpg",
+    "filename": "PXL_20261027_121506063.jpg",
+    "image": "signs_images/PXL_20261027_121506063.jpg",
+    "thumbnail": "assets/thumbnails/e8c9ab01643926d3135c.png?v=ce96604201e8",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 78,
+    "thumbnailVisibleArea": 11637.412,
+    "coordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121525696.jpg",
+    "filename": "PXL_20261027_121525696.jpg",
+    "image": "signs_images/PXL_20261027_121525696.jpg",
+    "thumbnail": "assets/thumbnails/46257188711e8c30efbc.png?v=4a5f324c7fea",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 149,
+    "thumbnailVisibleArea": 27713.173,
+    "coordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121546744.jpg",
+    "filename": "PXL_20261027_121546744.jpg",
+    "image": "signs_images/PXL_20261027_121546744.jpg",
+    "thumbnail": "assets/thumbnails/4a9849d9b8abde46a5da.png?v=6f6a79d0f9d2",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 67,
+    "thumbnailVisibleArea": 11379.569,
+    "coordinates": [
+      31.7721083,
+      35.2126735
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "address": "מטודלה 5",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "מחוץ לקופסא"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_121554197.jpg",
+    "filename": "PXL_20261027_121554197.jpg",
+    "image": "signs_images/PXL_20261027_121554197.jpg",
+    "thumbnail": "assets/thumbnails/aef0ab83aa719f4621de.png?v=d80b38bd4aa2",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 125,
+    "thumbnailVisibleArea": 14547.855,
+    "coordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121627877.jpg",
+    "filename": "PXL_20261027_121627877.jpg",
+    "image": "signs_images/PXL_20261027_121627877.jpg",
+    "thumbnail": "assets/thumbnails/b326adf4acafa579a9b7.png?v=e213903417c4",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 148,
+    "thumbnailVisibleArea": 28046.153,
+    "coordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121648440.jpg",
+    "filename": "PXL_20261027_121648440.jpg",
+    "image": "signs_images/PXL_20261027_121648440.jpg",
+    "thumbnail": "assets/thumbnails/100c9d1088277b23e8a6.png?v=24ea02520b57",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 103,
+    "thumbnailVisibleArea": 15803.09,
+    "coordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121739310.jpg",
+    "filename": "PXL_20261027_121739310.jpg",
+    "image": "signs_images/PXL_20261027_121739310.jpg",
+    "thumbnail": "assets/thumbnails/173f434f36d3026d7c7b.png?v=9a32c323fc49",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 88,
+    "thumbnailVisibleArea": 11831.427,
+    "coordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "coordinateSource": "exif",
+    "exifCoordinates": [
+      31.7721361,
+      35.2121611
+    ],
+    "address": "",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": true
+  },
+  {
+    "id": "PXL_20261027_121816760.jpg",
+    "filename": "PXL_20261027_121816760.jpg",
+    "image": "signs_images/PXL_20261027_121816760.jpg",
+    "thumbnail": "assets/thumbnails/814522fb0f158a2ae253.png?v=c1718c599759",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 141,
+    "thumbnailVisibleArea": 26530.388,
+    "coordinates": [
+      31.7722119,
+      35.2137338
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7721306,
+      35.2134972
+    ],
+    "address": "עזה 38",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "דוד המלך",
+        "התעללות בפונטים"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_121823472.jpg",
+    "filename": "PXL_20261027_121823472.jpg",
+    "image": "signs_images/PXL_20261027_121823472.jpg",
+    "thumbnail": "assets/thumbnails/d3ae26471252024993b4.png?v=12ec094cede5",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 90,
+    "thumbnailVisibleArea": 14324.482,
+    "coordinates": [
+      31.7721525,
+      35.2138794
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7721306,
+      35.2134972
+    ],
+    "address": "עזה 27",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "התעללות בפונטים"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_121849042.jpg",
+    "filename": "PXL_20261027_121849042.jpg",
+    "image": "signs_images/PXL_20261027_121849042.jpg",
+    "thumbnail": "assets/thumbnails/2d019344ffa6997eeb8f.png?v=da8abd4117b8",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 96,
+    "thumbnailVisibleArea": 13925.522,
+    "coordinates": [
+      31.7723345,
+      35.2138588
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7721306,
+      35.2134972
+    ],
+    "address": "עזה 36",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_121900343.jpg",
+    "filename": "PXL_20261027_121900343.jpg",
+    "image": "signs_images/PXL_20261027_121900343.jpg",
+    "thumbnail": "assets/thumbnails/9dc202256d269252e1c2.png?v=6fe1aa26a8ae",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 89,
+    "thumbnailVisibleArea": 17004.827,
+    "coordinates": [
+      31.7722553,
+      35.2140321
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7721306,
+      35.2134972
+    ],
+    "address": "עזה 25",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_121916069.jpg",
+    "filename": "PXL_20261027_121916069.jpg",
+    "image": "signs_images/PXL_20261027_121916069.jpg",
+    "thumbnail": "assets/thumbnails/12c136b651fccbe64fba.png?v=f6b9da4968db",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 118,
+    "thumbnailVisibleArea": 21126.212,
+    "coordinates": [
+      31.7724592,
+      35.2140112
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7721306,
+      35.2134972
+    ],
+    "address": "עזה 34",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "ישן חדש"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_121921848.jpg",
+    "filename": "PXL_20261027_121921848.jpg",
+    "image": "signs_images/PXL_20261027_121921848.jpg",
+    "thumbnail": "assets/thumbnails/0020365b5a112ede2394.png?v=65d08beba4e9",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 110,
+    "thumbnailVisibleArea": 19604.733,
+    "coordinates": [
+      31.7724592,
+      35.2140112
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7721306,
+      35.2134972
+    ],
+    "address": "עזה 34",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "מחוץ לקופסא",
+        "גם באנגלית",
+        "ישן חדש"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_121931461.jpg",
+    "filename": "PXL_20261027_121931461.jpg",
+    "image": "signs_images/PXL_20261027_121931461.jpg",
+    "thumbnail": "assets/thumbnails/6c5a5c9636e444ecd371.png?v=3c7f84ee4007",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 97,
+    "thumbnailVisibleArea": 16138.631,
+    "coordinates": [
+      31.7723608,
+      35.2141766
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7721306,
+      35.2134972
+    ],
+    "address": "עזה 23",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "התעללות בפונטים"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_122021161.jpg",
+    "filename": "PXL_20261027_122021161.jpg",
+    "image": "signs_images/PXL_20261027_122021161.jpg",
+    "thumbnail": "assets/thumbnails/baf4a16ac39c753de408.png?v=809822dbab86",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 186,
+    "thumbnailVisibleArea": 32724.106,
+    "coordinates": [
+      31.7726936,
+      35.2145733
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7726194,
+      35.2142417
+    ],
+    "address": "עזה 19",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_122110833.jpg",
+    "filename": "PXL_20261027_122110833.jpg",
+    "image": "signs_images/PXL_20261027_122110833.jpg",
+    "thumbnail": "assets/thumbnails/90c920b28ad3767eea4c.png?v=e2a064e21571",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 77,
+    "thumbnailVisibleArea": 12628.384,
+    "coordinates": [
+      31.7730766,
+      35.2147498
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7726194,
+      35.2142417
+    ],
+    "address": "עזה 26",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_122128479.jpg",
+    "filename": "PXL_20261027_122128479.jpg",
+    "image": "signs_images/PXL_20261027_122128479.jpg",
+    "thumbnail": "assets/thumbnails/567e319be019d3aa5602.png?v=8d336d16a324",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 149,
+    "thumbnailVisibleArea": 26568.012,
+    "coordinates": [
+      31.7730246,
+      35.2150373
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7726194,
+      35.2142417
+    ],
+    "address": "עזה 15",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "ישן חדש"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_122139716.jpg",
+    "filename": "PXL_20261027_122139716.jpg",
+    "image": "signs_images/PXL_20261027_122139716.jpg",
+    "thumbnail": "assets/thumbnails/5431d3a541fe39194380.png?v=a0695a00c6e1",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 98,
+    "thumbnailVisibleArea": 16402.463,
+    "coordinates": [
+      31.7730246,
+      35.2150373
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7726194,
+      35.2142417
+    ],
+    "address": "עזה 15",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "דוד המלך",
+        "ישן חדש"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_122149553.jpg",
+    "filename": "PXL_20261027_122149553.jpg",
+    "image": "signs_images/PXL_20261027_122149553.jpg",
+    "thumbnail": "assets/thumbnails/8571ce3c92b9988c1570.png?v=faad956811af",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 186,
+    "thumbnailVisibleArea": 30940.659,
+    "coordinates": [
+      31.7732811,
+      35.2148667
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7726194,
+      35.2142417
+    ],
+    "address": "עזה 24",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_122233304.jpg",
+    "filename": "PXL_20261027_122233304.jpg",
+    "image": "signs_images/PXL_20261027_122233304.jpg",
+    "thumbnail": "assets/thumbnails/cd2318eb5f265ff75871.png?v=acd96258557f",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 85,
+    "thumbnailVisibleArea": 15433.459,
+    "coordinates": [
+      31.7734365,
+      35.215378
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.773325,
+      35.2150778
+    ],
+    "address": "עזה 18",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": []
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_122330636.jpg",
+    "filename": "PXL_20261027_122330636.jpg",
+    "image": "signs_images/PXL_20261027_122330636.jpg",
+    "thumbnail": "assets/thumbnails/92c85530226cef292b02.png?v=1a1814ada758",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 102,
+    "thumbnailVisibleArea": 6219.878,
+    "coordinates": [
+      31.7737903,
+      35.2158254
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.773325,
+      35.2150778
+    ],
+    "address": "ארלוזורוב 5 ירושלים",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "ישן חדש"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_122409236.jpg",
+    "filename": "PXL_20261027_122409236.jpg",
+    "image": "signs_images/PXL_20261027_122409236.jpg",
+    "thumbnail": "assets/thumbnails/d99778da08fe95a1364e.png?v=943ae2a9af6b",
+    "thumbnailWidth": 192,
+    "thumbnailHeight": 149,
+    "thumbnailVisibleArea": 27095.071,
+    "coordinates": [
+      31.7740421,
+      35.2156433
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.773325,
+      35.2150778
+    ],
+    "address": "בן מיימון 24",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "דוד המלך"
+      ]
+    },
+    "hidden": false
+  },
+  {
+    "id": "PXL_20261027_122612362.jpg",
+    "filename": "PXL_20261027_122612362.jpg",
+    "image": "signs_images/PXL_20261027_122612362.jpg",
+    "thumbnail": "assets/thumbnails/6145f0c12a13fd8696d0.png?v=b099442068ff",
+    "thumbnailWidth": 110,
+    "thumbnailHeight": 192,
+    "thumbnailVisibleArea": 9933.337,
+    "coordinates": [
+      31.7746081,
+      35.2158731
+    ],
+    "coordinateSource": "manual",
+    "exifCoordinates": [
+      31.7746278,
+      35.2157417
+    ],
+    "address": "רמב\"ן 17 ירושלים",
+    "width": 4080,
+    "height": 3064,
+    "tags": {
+      "tags": [
+        "מחוץ לקופסא"
+      ]
+    },
+    "hidden": false
   }
 ]

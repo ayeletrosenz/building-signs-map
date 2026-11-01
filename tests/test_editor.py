@@ -74,6 +74,23 @@ class EditorTests(unittest.TestCase):
         self.assertEqual(saved["photos"][0]["tags"]["type"], ["קיים"])
         self.assertEqual(saved["photos"][0]["tags"]["custom"], [])
 
+    def test_hidden_signs_persist_and_can_be_restored(self):
+        payload = self.payload()
+        payload["annotations"]["one.jpg"]["hidden"] = True
+        saved = serve.save_editor(payload)
+        self.assertTrue(saved["annotations"]["one.jpg"]["hidden"])
+        self.assertTrue(next(p for p in saved["photos"] if p["id"] == "one.jpg")["hidden"])
+        self.assertEqual(len(saved["photos"]), 2)
+        payload = self.payload()
+        payload["annotations"]["one.jpg"]["hidden"] = "false"
+        before = self.metadata()
+        with self.assertRaises(serve.EditorError):
+            serve.save_editor(payload)
+        self.assertEqual(self.metadata(), before)
+        payload["annotations"]["one.jpg"]["hidden"] = False
+        saved = serve.save_editor(payload)
+        self.assertFalse(next(p for p in saved["photos"] if p["id"] == "one.jpg")["hidden"])
+
     def test_conflicting_or_invalid_updates_leave_all_metadata_intact(self):
         payload = self.payload(); payload["revision"] = "stale"; before = self.metadata()
         with self.assertRaises(serve.EditorError) as conflict:

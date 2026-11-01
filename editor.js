@@ -110,6 +110,12 @@ function discardAndCloseEditor() {
   e$("close-editor-dialog").close();finishClosingEditor();editorState=undefined;
 }
 function annotation(id) {return editorState.annotations[id] ||= {coordinates:null,tags:{}};}
+function setSignsHidden(ids,hidden) {
+  for(const id of ids)annotation(id).hidden=hidden;
+  markEditorDirty();renderEditor();
+}
+e$("hide-selected").addEventListener("click",()=>setSignsHidden(editorSelection,true));
+e$("show-selected").addEventListener("click",()=>setSignsHidden(editorSelection,false));
 function renderEditor() {renderTagLibrary();renderPhotoGrid();updateSelection();}
 function renderPhotoGrid() {
   const grid=e$("photo-grid");grid.replaceChildren();
@@ -128,10 +134,18 @@ function renderPhotoGrid() {
     for(const label of labels){const chip=document.createElement("span");chip.className="tag-chip card-tag";chip.textContent=label;tags.append(chip);}
     const locate=document.createElement("button");locate.className="card-location";locate.textContent="כתובת ומיקום";
     locate.addEventListener("click",()=>selectLocation(photo.id));
-    card.append(checkbox,preview,filename,tags,locate);grid.append(card);
+    const hidden=annotation(photo.id).hidden===true;
+    card.classList.toggle("is-hidden",hidden);
+    const visibility=document.createElement("button");visibility.className="card-visibility";
+    visibility.textContent=hidden?"הצגה במפה":"הסתרה מהמפה";
+    visibility.setAttribute("aria-label",`${visibility.textContent}: ${photo.filename}`);
+    visibility.addEventListener("click",()=>setSignsHidden([photo.id],!hidden));
+    if(hidden){const badge=document.createElement("span");badge.className="hidden-sign-label";badge.textContent="מוסתר מהמפה";card.append(badge);}
+    card.append(checkbox,preview,filename,tags,locate,visibility);grid.append(card);
   }
 }
 function updateSelection() {
+  e$("hide-selected").disabled=e$("show-selected").disabled=!editorSelection.size;
   e$("selected-count").textContent=editorSelection.size?`${editorSelection.size} שלטים נבחרו`:"לא נבחרו שלטים";
   for(const card of e$("photo-grid").children) {const checked=editorSelection.has(card.dataset.photoId);card.classList.toggle("selected",checked);card.querySelector('input[type="checkbox"]').checked=checked;}
   renderSelectionTags();

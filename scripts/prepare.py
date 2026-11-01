@@ -180,7 +180,8 @@ def prepare(config=None, annotations=None, save=True):
                                "thumbnailVisibleArea": round(visible_area, 3),
                                "coordinates": coords, "coordinateSource": "manual" if manual is not None else "exif" if gps else None,
                                "exifCoordinates": gps, "address": entry.get("address", ""),
-                               "width": dimensions[0], "height": dimensions[1], "tags": tags})
+                               "width": dimensions[0], "height": dimensions[1], "tags": tags,
+                               "hidden": entry.get("hidden") is True})
         except Exception as exc:
             errors.append(key + ": " + str(exc))
     if errors:

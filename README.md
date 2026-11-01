@@ -1,6 +1,19 @@
 # שלטים — photographic archive
 
-A static Leaflet photography map with a Hebrew visual editor that saves directly to local project files. Original photographs are never modified. The blue/pink street map, street names, photographs, and supplied Hebrew font are served locally.
+A map-based photographic archive of street signs, with a blue/pink OpenStreetMap street map, Hebrew filters, and transparent sign thumbnails. Select a sign to see its full photograph and tags.
+
+**Live website:** [ayeletrosenz.github.io/building-signs-map](https://ayeletrosenz.github.io/building-signs-map/)
+
+The public website is hosted on GitHub Pages and is read-only. A separate local Hebrew editor saves tags, addresses, and corrected locations directly to project files. Original photographs are never modified.
+
+## How it works
+
+- **HTML, CSS, and JavaScript** provide the interface, styling, filters, and image windows.
+- **Leaflet** displays locally stored **OpenStreetMap** street data in the archive's custom colors. Browsing the diagram map does not request external map tiles.
+- **Python and Pillow** prepare photo thumbnails and read GPS metadata. Transparent PNG crops supply the sign cutouts.
+- **JSON files** hold configuration, tags, and photo positions; no database is required.
+- A **local Python server** supports editing. Explicit address searches use **Nominatim**, an OpenStreetMap search service.
+- **GitHub Pages** serves the public static website without a running Python server.
 
 ## Run the archive and editor
 
@@ -96,7 +109,9 @@ The **תפריט** button stays in the same position when the drawer slides in/o
 
 ## Static publishing
 
-Upload `index.html`, `styles.css`, `app.js`, `editor.js`, `map-display.js`, `config.json`, the supplied `TheBasics-Medium…woff2` font, `vendor/`, `data/`, `assets/`, and `signs_images/`, preserving paths. Exclude `.venv/`, `.editor/`, `tests/`, `test-results/`, and `scripts/`. Crops are needed only when preparing derivatives locally.
+The website is live on GitHub Pages at the link above. Editing locally does not automatically update the published website; saved changes must also be included in a new deployment.
+
+The current live site serves the source files from the repository. The separate export workflow below prepares a smaller public-only package for future deployments. Generating that package does not change the current GitHub Pages publishing configuration or upload anything.
 
 The public archive is read-only: the authoring entry appears only when the local helper API is available on localhost. There is no public saving/geocoding backend. Root and subdirectory hosting are supported. Basic preview without editing still works with `python3 -m http.server 8001 --bind 127.0.0.1`.
 
@@ -110,7 +125,7 @@ Street data is © OpenStreetMap contributors, under the [Open Database License](
 
 Tests use temporary photographs/metadata and a local mock address provider. They verify persistence, backups, conflicts, rollback, request restrictions, rate limits, caching, transparent cutouts, and original-file preservation without querying an external geocoder.
 
-## Prepare for publishing (without uploading)
+## Prepare a public export or update (without uploading)
 
 Save any editor changes first. From the project folder, run:
 
@@ -128,4 +143,4 @@ To preview this exact export locally:
 .venv/bin/python -m http.server 8002 --bind 127.0.0.1 --directory dist
 ```
 
-Open **http://127.0.0.1:8002**; stop with **Ctrl+C**. This preview has no editing tools. Continue editing through `scripts/serve.py` on port 8001. When ready to publish later, use only `dist/` or `signs-publish.zip`, not the whole project folder. No hosting provider has been selected or configured yet.
+Open **http://127.0.0.1:8002**; stop with **Ctrl+C**. This preview has no editing tools. Continue editing through `scripts/serve.py` on port 8001. To deploy this optimized export, publish the contents of `dist/` as the site's root using a dedicated publishing branch or a GitHub Actions artifact. The ZIP contains those same files. The export command does not upload files or trigger a deployment.
