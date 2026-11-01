@@ -20,7 +20,7 @@ function validCoordinates(value) {
     && Math.abs(value[0]) <= 90 && Math.abs(value[1]) <= 180;
 }
 async function json(path) {
-  const response = await fetch(path);
+  const response = await fetch(path,{cache:"no-cache"});
   if (!response.ok) throw new Error(`Could not load ${path} (${response.status}).`);
   return response.json();
 }
